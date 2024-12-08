@@ -1,0 +1,13 @@
+/** adjusting the size of the image so it looks good under the form */
+.image_1{
+	height: 170px;
+	width: 200px;
+}
+
+
+/** creating a small border around the form to make it more uniform */
+form{
+	border: 2px solid black;
+	padding: 6px;
+	width: 200px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<title>SDG project</title>
+		<h1> Sustainable Goals Development Donate Page</h1>
+		<link href="style.css" rel="stylesheet">
+		
+		
+		<a class="nav-link" href="index.html">Home</a> &nbsp;<a class="nav-link" href="index3.html">About</a> &nbsp;<a class="nav-link" href="index2.html">Contact</a> &nbsp;<a class="nav-link" href="index1.html">Donate</a> &nbsp;<a class="nav-link" href="Sources.html">Sources</a>
+		
+		<script>
+        function displayMessage() {
+            // Get values from the input fields
+            var firstName = document.getElementById('firstName').value;
+            var secondName = document.getElementById('secondName').value;
+            var phoneNumber = document.getElementById('phoneNumber').value;
+            var amount = document.getElementById('amount').value;
+            
+            // Create a message with the given phone number
+            var message = "Thank you, " + firstName +  " for your generous donation, a digital receipt has been sent to the phone number: " + phoneNumber;
+			
+            
+            // Display the message in the 'message' div
+            document.getElementById('message').innerHTML = message;
+        }
+		</script>
+		
+	</head>	
+	<body>
+		
+		<h2>Why Should You Donate?</h2>
+		<p>All donates that are recived go towards benefiting those who need it most. We appriciate all donates that are made regardless of the amount. This is your opportunity to make a small difference in the world. We have thousands of people each year that donate. If we want to reach all of our goals be the year 2030, donations go a long way to achieve our goals. If you wish to keep up to date on all the great progress we make, click the link below and see where your donations go and what difference it makes.
+		<a href="https://sdgs.un.org/goals/goal3#progress_and_info">Click Here To See All Of Our Progress Since 2016</a>
+		<br>
+		<br>
+
+		<h3>Donation Form</h3>
+		<p>Enter your information below in order to complete your donation</p>
+		<form onsubmit="event.preventDefault(); displayMessage();">
+			<label for="firstName">First Name:</label><br>
+			<input type="text" id="firstName" name="firstName" required><br><br>
+
+			<label for="secondName">Second Name:</label><br>
+			<input type="text" id="secondName" name="secondName" required><br><br>
+
+			<label for="phoneNumber">Phone Number:</label><br>
+			<input type="text" id="phoneNumber" name="phoneNumber" required><br><br>
+
+			<label for="amount">Amount of Donation (€):</label><br>
+			<input type="number" id="amount" name="amount" required><br><br>
+
+			<button type="submit">Submit</button>
+		</form>
+
+		<div id="message" style="margin-top: 40px; font-weight: bold;"></div>
+		<br>
+		<img src="sdg.donate.png" class ="image_1 "alt="donate image">
+		<br>
+		
+		
+		
+		
+	</body>
+</html>
+    
+   
+   
+   &nbsp;
+   
+  
